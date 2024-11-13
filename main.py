@@ -1,11 +1,11 @@
-from Calculate import calculate
+from Calculate import Calculate
 
 
 def main():
-    flag = calculate.get_value()
+    flag = Calculate.get_value()
     if flag:
         a,b,c = flag
-        cal = calculate(a,b,c)
+        cal = Calculate(a, b, c)
         result = cal.calculate_root()
         cal.show_results(result)
 
